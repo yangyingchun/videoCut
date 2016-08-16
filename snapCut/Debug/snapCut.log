@@ -1,0 +1,98 @@
+﻿生成启动时间为 2016-8-16 09:44:33。
+     1>项目“D:\我的资料库\Documents\Visual Studio 2010\Projects\KCF\snapCut\snapCut.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\snapCut.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         d:\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Color.cpp ColorClassifier.cpp GMM.cpp GaussianFitter.cpp VideoSnapCut.cpp snapCut.cpp
+         GMM.cpp
+         正在生成代码...
+         正在编译...
+         snapCut.cpp
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(369): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(369): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(372): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(376): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(379): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(381): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(469): warning C4172: 返回局部变量或临时变量的地址
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(497): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(500): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(501): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(548): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(556): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(559): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(560): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(561): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(562): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(736): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(804): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(852): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(856): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\grabcutwithrect.h(857): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\snapcut.cpp(202): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\snapcut.cpp(205): warning C4018: “<”: 有符号/无符号不匹配
+         VideoSnapCut.cpp
+     1>e:\opencv\opencv\build\include\opencv2\flann\result_set.h(306): warning C4003: “max”宏的实参不足
+     1>e:\opencv\opencv\build\include\opencv2\flann\result_set.h(428): warning C4003: “max”宏的实参不足
+     1>e:\opencv\opencv\build\include\opencv2\flann\lsh_index.h(203): warning C4003: “max”宏的实参不足
+     1>e:\opencv\opencv\build\include\opencv2\flann\lsh_index.h(269): warning C4003: “max”宏的实参不足
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(155): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(157): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(311): warning C4244: “参数”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(311): warning C4244: “参数”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(311): warning C4244: “参数”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(379): warning C4244: “=”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(380): warning C4244: “=”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(381): warning C4244: “=”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(383): warning C4244: “参数”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(383): warning C4244: “参数”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(383): warning C4244: “参数”: 从“float”转换到“uchar”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\videosnapcut.cpp(1254): warning C4018: “<”: 有符号/无符号不匹配
+         GaussianFitter.cpp
+         ColorClassifier.cpp
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\colorclassifier.cpp(37): warning C4101: “boundingBoxMin”: 未引用的局部变量
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\colorclassifier.cpp(38): warning C4101: “boundingBoxMax”: 未引用的局部变量
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\colorclassifier.cpp(241): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\我的资料库\documents\visual studio 2010\projects\kcf\snapcut\colorclassifier.cpp(242): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         Color.cpp
+         正在生成代码...
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         d:\VS2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\我的资料库\Documents\Visual Studio 2010\Projects\KCF\Debug\snapCut.exe" /INCREMENTAL /NOLOGO opencv_ml249d.lib opencv_calib3d249d.lib opencv_contrib249d.lib opencv_core249d.lib opencv_features2d249d.lib opencv_flann249d.lib opencv_gpu249d.lib opencv_highgui249d.lib opencv_imgproc249d.lib opencv_legacy249d.lib opencv_objdetect249d.lib opencv_ts249d.lib opencv_video249d.lib opencv_nonfree249d.lib opencv_ocl249d.lib opencv_photo249d.lib opencv_stitching249d.lib opencv_superres249d.lib opencv_videostab249d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\snapCut.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\我的资料库\Documents\Visual Studio 2010\Projects\KCF\Debug\snapCut.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\我的资料库\Documents\Visual Studio 2010\Projects\KCF\Debug\snapCut.lib" /MACHINE:X86 Debug\snapCut.exe.embed.manifest.res
+         Debug\BMPImage.obj
+         Debug\cluster.obj
+         Debug\Color.obj
+         Debug\ColorClassifier.obj
+         Debug\fhog.obj
+         Debug\GaussianFitter.obj
+         Debug\GMM.obj
+         Debug\graph.obj
+         Debug\Image.obj
+         Debug\kcftracker.obj
+         Debug\kcfTrans.obj
+         Debug\maxflow.obj
+         Debug\run.obj
+         Debug\snapCut.obj
+         Debug\imgfeatures.obj
+         Debug\kdtree.obj
+         Debug\minpq.obj
+         Debug\sift.obj
+         Debug\utils.obj
+         Debug\xform.obj
+         Debug\VideoSnapCut.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\snapCut.exe.embed.manifest" /manifest Debug\snapCut.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         snapCut.vcxproj -> D:\我的资料库\Documents\Visual Studio 2010\Projects\KCF\Debug\snapCut.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\snapCut.unsuccessfulbuild”。
+         正在对“Debug\snapCut.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\我的资料库\Documents\Visual Studio 2010\Projects\KCF\snapCut\snapCut.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:34.24

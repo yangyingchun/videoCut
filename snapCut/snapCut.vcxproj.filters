@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\sift">
+      <UniqueIdentifier>{41e04f39-8cd9-4da1-8992-cb5a8e018a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ImageFeature">
+      <UniqueIdentifier>{d76db9df-a77a-44ba-af8e-e95d7890d36d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\graphcut">
+      <UniqueIdentifier>{cfd2bc87-6c63-475d-b2be-2c0cf6f71feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\kcf">
+      <UniqueIdentifier>{566f8a92-c5d0-449b-9322-858510b37691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\kcf">
+      <UniqueIdentifier>{dadffaac-bd26-4c18-9ab1-e93a86d552ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="CodeManage.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="snapCut.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BMPImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorClassifier.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussianFitter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GMM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="maxflow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoSnapCut.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils.c">
+      <Filter>源文件\sift</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xform.c">
+      <Filter>源文件\sift</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sift.c">
+      <Filter>源文件\sift</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kdtree.c">
+      <Filter>源文件\sift</Filter>
+    </ClCompile>
+    <ClCompile Include="src\minpq.c">
+      <Filter>源文件\sift</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgfeatures.c">
+      <Filter>源文件\sift</Filter>
+    </ClCompile>
+    <ClCompile Include="fhog.cpp">
+      <Filter>源文件\kcf</Filter>
+    </ClCompile>
+    <ClCompile Include="kcftracker.cpp">
+      <Filter>源文件\kcf</Filter>
+    </ClCompile>
+    <ClCompile Include="kcfTrans.cpp">
+      <Filter>源文件\kcf</Filter>
+    </ClCompile>
+    <ClCompile Include="run.cpp">
+      <Filter>源文件\kcf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GaussianFitter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoReader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoSnapCut.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BMPImage.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorClassifier.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="DataImage.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>头文件\ImageFeature</Filter>
+    </ClInclude>
+    <ClInclude Include="block.h">
+      <Filter>头文件\graphcut</Filter>
+    </ClInclude>
+    <ClInclude Include="GMM.h">
+      <Filter>头文件\graphcut</Filter>
+    </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>头文件\graphcut</Filter>
+    </ClInclude>
+    <ClInclude Include="lazysnapping.h">
+      <Filter>头文件\graphcut</Filter>
+    </ClInclude>
+    <ClInclude Include="grabcutWithRect.h">
+      <Filter>头文件\graphcut</Filter>
+    </ClInclude>
+    <ClInclude Include="lsapplication.h">
+      <Filter>头文件\graphcut</Filter>
+    </ClInclude>
+    <ClInclude Include="ffttools.hpp">
+      <Filter>头文件\kcf</Filter>
+    </ClInclude>
+    <ClInclude Include="fhog.hpp">
+      <Filter>头文件\kcf</Filter>
+    </ClInclude>
+    <ClInclude Include="kcftracker.hpp">
+      <Filter>头文件\kcf</Filter>
+    </ClInclude>
+    <ClInclude Include="labdata.hpp">
+      <Filter>头文件\kcf</Filter>
+    </ClInclude>
+    <ClInclude Include="recttools.hpp">
+      <Filter>头文件\kcf</Filter>
+    </ClInclude>
+    <ClInclude Include="tracker.h">
+      <Filter>头文件\kcf</Filter>
+    </ClInclude>
+    <ClInclude Include="constSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

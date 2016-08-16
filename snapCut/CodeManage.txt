@@ -1,0 +1,180 @@
+////以下是将视频序列装换成AVI视频的代码
+int num = 0;
+	frame = imread("E:\\videoCut\\possibleIdea\\VideoDataSet\\davis\\JPEGImages\\480p\\paragliding\\00000.jpg");
+	VideoWriter writer("E:\\videoCut\\VideoTest.avi", CV_FOURCC('M', 'J', 'P', 'G'), 25.0, frame.size());  
+	while(1)
+	{
+		char* path = new char[100];
+	    sprintf(path, "E:\\videoCut\\possibleIdea\\VideoDataSet\\davis\\JPEGImages\\480p\\paragliding\\%05d.jpg",num++);
+		
+		Mat in = imread(path);
+		delete path;
+		if(in.empty())
+			break;
+		writer << in;
+		
+	}
+
+////以下是对带权混合高斯模型的实验
+	//Mat mask(mfPro.size(), CV_8UC1);     //mask存储的是triMap
+	//Point p;
+	//int x1 = 0, x2 = 0, x3 = 0, x4 = 0;
+	//float minx = 1000000.0;
+	//float maxx = 0.0;
+	//vector<float> mf;
+	//for (p.y = 0; p.y < mfPro.rows; p.y++) {
+ //       for (p.x = 0; p.x < mfPro.cols; p.x++) {
+	//		mf.push_back(mfPro.at<float>(p));
+	//		if(mfPro.at<float>(p) < 0.0001)
+	//		{
+	//			x1++;
+	//			mask.at<uchar>(p) = GC_BGD;
+	//		}
+	//		else if(mfPro.at<float>(p) >= 0.0001 && mfPro.at<float>(p) < 0.5)
+	//		{
+	//			x2++;
+	//			mask.at<uchar>(p) = GC_PR_BGD;
+	//		}
+	//		else if(mfPro.at<float>(p) >= 0.5 && mfPro.at<float>(p) < 0.9999)
+	//		{
+	//			x3++;
+	//			mask.at<uchar>(p) = GC_PR_FGD;
+	//		}
+	//		else
+	//		{
+	//			x4++;
+	//			mask.at<uchar>(p) = GC_FGD;
+	//		}
+ //       }
+ //   }
+	//sort(mf.begin(), mf.end());
+	/*for(int k = 0; k < mf.size(); k++)
+	{
+		cout << mf[k] << ",";
+		if(k%40)
+			cout <<endl;
+	}*/
+	/*for(int k = 0; k < mf.size(); k++)
+	{
+		
+		if(mf[k] > 0.0)
+		{
+			minx = mf[k];
+			break;
+		}
+
+	}
+	for(int k = mf.size()-1; k >= 0; k--)
+	{
+		if(mf[k] < 1.0)
+		{
+			maxx = mf[k];
+			break;
+		}
+
+	}
+	cout << "x1 = " << x1 << ", x2 = " << x2 << ", x3 = " << x3 << ", x4 = " << x4 << ", minx = " << minx << ", maxx = " << maxx << endl;*/
+
+////2016-08-13-15-14
+//Mat VideoSnapCut::CreateContourBand(const Mat& Mask)//得到轮廓线窄带矩阵
+//{
+//	CvSize size;
+//	size.width = Mask.cols;
+//	size.height = Mask.rows;
+//
+//	Mat borderBand(size, CV_8UC1);
+//
+//	int	bandWidth = 10;	
+//
+//	for(int y=0;y<borderBand.rows;y++)
+//	{
+//		for(int x = 0;x<borderBand.cols;x++)
+//		{
+//			bool borderPixel = false;
+//			int xx,yy;
+//			if(Mask.at<uchar>(y, x) == 1) // foreground
+//			{
+//				xx = x - bandWidth;
+//				yy = y    ;
+//				if(xx==-bandWidth || (xx >= 0 && !Mask.at<uchar>(yy, xx)))
+//				{
+//					borderPixel = true;						
+//				}
+//				
+//				xx = x + bandWidth;
+//				yy = y    ;
+//				if(xx==borderBand.cols || ( xx < borderBand.cols && !Mask.at<uchar>(yy, xx) ))
+//				{
+//					borderPixel = true;						
+//				}
+//				
+//				xx = x	  ;	
+//				yy = y - bandWidth;
+//				if(yy==-bandWidth || (yy >= 0 && !Mask.at<uchar>(yy, xx)))
+//				{
+//					borderPixel = true;						
+//				}
+//				
+//				xx = x    ;
+//				yy = y + bandWidth;
+//				if(yy==borderBand.rows || (yy < borderBand.rows && !Mask.at<uchar>(yy, xx)))
+//				{
+//					borderPixel = true;						
+//				}					
+//			}
+//			borderBand.at<uchar>(y, x) = borderPixel;
+//		}
+//	}
+//	return borderBand;
+//
+//}
+////跟踪相关的代码
+			//Mat contor = gt.mVideoSnapCut -> CreateContour(con);   //如何对边界上的点编号
+			//gt.mVideoSnapCut -> DisplayImage("由矩阵生成的Mat", contor);
+			//imshow("由矩阵生成的Mat", contor);
+			//waitKey();
+			//gt.dilateAndErode(con, 1);
+			//Mat result, trackImage;
+			//gt.image -> copyTo(result);     //利用上一帧的图像初始化跟踪框
+			//gt.image -> copyTo(trackImage);
+			//vector<Point> poly;
+			//vector<Rect>polyRect;
+			////vector<vector<Point>> Contours = gt.generateContours(con);//根据二值化图像生成轮廓
+			////for(int i = 0; i < Contours.size(); i++)//生成轮廓显示
+			////{
+			////	pyF = gt.showContour(Contours[i], result, VideoSnapCut::mMaskSize*2.0f/3, polyRect, 1);					
+			////	ForegroundBorderPolygons.push_back(pyF);	//将边界多边形加入到容器中
+			////	imshow("关键帧分割后的均匀采样框", result);
+			////}
+			////waitKey();
+			////break;
+			//vector<vector<Point>> contours;
+			//vector<Vec4i> hierarchy;
+			//findContours(con, contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);				
+			//int idx = 0;
+			//for(; idx >= 0; idx = hierarchy[idx][0])//= hierarchy[idx][0]
+			//{
+			//	//cout << "多边形化之前点数：" << contours[idx].size() << endl;
+			//	//approxPolyDP(Mat(contours[idx]), poly, 0.001, true);  //轮廓多边形化
+			// //   cout << "多边形化之后点数：" << poly.size() << endl;
+			//	pyF = gt.showContour(contours[idx], result, VideoSnapCut::mMaskSize*2.0f/3, polyRect, 1);					
+			//	//ForegroundBorderPolygons.push_back(pyF);	//将边界返回的所有轮廓上的点加入到容器中
+			//	imshow("关键帧分割后的均匀采样框", result);
+			//	waitKey();
+			//	//delete pyF;//不能在这里删除，一旦删除他所指的内存被清空了，尽管放在vector中了
+			//}
+
+			//int num = polyRect.size();   //采样点数目
+			//vector<KCFTracker> trackers(num, new KCFTracker(HOG, FIXEDWINDOW, MULTISCALE, LAB));//初始化跟踪器
+			//for(int i = 0; i < num; i++)//最后一个是整体的轮廓
+			//{
+			//	trackers[i].init(polyRect[i], trackImage);
+			//}
+
+			////gt.mVideoSnapCut->SetForegroundBorderPolygons(&ForegroundBorderPolygons);
+			////gt.mVideoSnapCut->CreateMasks();					
+			////gt.mVideoSnapCut->BuildColorClassifiers();        //对上一帧分割结果建立局部分类器
+			////delete pyF;
+
+			//curFrame.copyTo(gt.mVideoSnapCut -> mPreImage);//将当前帧图像传递给上一帧	
+			////count++;已经在进入之前加了
